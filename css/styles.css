@@ -129,10 +129,24 @@ header > .container {
 /*<!--HERO--*/
 .hero {
   text-align: center;
-  background-color: #2f303a;
+
   padding-top: 200px;
   padding-bottom: 200px;
+  height: 600px;
+  outline: 1px solid black;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/beaty/Img\ \(1\)-2.jpg");
+  background-color: #2f303a;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .hero-object {
   margin-left: auto;
   margin-right: auto;
@@ -142,7 +156,7 @@ header > .container {
   margin-top: 0;
   margin-bottom: 30px;
   padding: 0;
-  font-weight: 900;
+  font-weight: 100;
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
@@ -186,12 +200,29 @@ header > .container {
   color: #ffffff;
   cursor: pointer;
 }
-.hero {
-  background-color: #2f303a;
-}
-
 /*--особености--*/
 
+.list-item-icon::before {
+  content: " ";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+}
+.icon-antena::before {
+  background-image: url("../images/beaty/antenna\ 1.png");
+}
+.icon-clock::before {
+  background-image: url("../images/beaty/clock\ 1.png");
+}
+.icon-diagram::before {
+  background-image: url("../images/beaty/diagram\ 1.png");
+}
+.icon-space::before {
+  background-image: url("../images/beaty/astronaut\ 1.png");
+}
 .features {
   padding-top: 88px;
   padding-bottom: 100px;
