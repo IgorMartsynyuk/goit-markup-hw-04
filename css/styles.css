@@ -117,6 +117,24 @@ header > .container {
 .mail-link:focus {
   color: #2196f3;
 }
+.mail-link::before {
+  content: " ";
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 11px;
+  background-image: url("../images/beaty/envelope-1.svg");
+  background-position: center;
+  background-size: contain;
+}
+.tel-link::before {
+  content: " ";
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  margin-right: 11px;
+  background-image: url("../images/beaty/Vector.png");
+}
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -288,7 +306,32 @@ header > .container {
 }
 
 /*<!--команда-->*/
+.list-link {
+  display: inline-block;
+}
+.list-item1 {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.list-social {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+}
+.list-item1:not(:last-child) {
+  margin-right: 10px;
+}
 
+.list-social:hover,
+.list-social:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -341,8 +384,34 @@ header > .container {
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 0;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   text-transform: capitalize;
+}
+
+/*--CLIENTS--*/
+.clients .container {
+  padding: 94px 0;
+}
+.clients-list {
+  display: inline-block;
+  display: inline-flex;
+}
+.clients-itam {
+  width: 170px;
+  height: 90px;
+}
+.clients-itam :not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
 }
 /*--footer--*/
 .footer .logo-2 {
